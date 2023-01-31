@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="form-group">
+        <label for="oamount">
+            Amount to Convert :
+        </label>
+        <input type="text" class="searchBox" placeholder="0.00">
+    </div>
+
+    <div>
+        <span>From</span>
+
+        <select class="form-control from" id="sel1">
+            <option value="">Select One …</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+        </select>
+    </div>
+
+    <div>
+        <select class="form-control to" id="sel2">
+            <option value="">Select One …</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+        </select>
+    </div>
+
+    <div>
+
+        <button type="submit" class="convert"> Convert </button>
+        <button onclick="clearVal()"> Reset </button>
+
+    </div>
+
+    <div id="finalAmount">
+
+        <h2>Converted Amount :
+            <span class="finalValue" style="color:yellow;"></span>
+        </h2>
+
+    </div>
+
+
+</body>
+
+</html>
